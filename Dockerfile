@@ -24,5 +24,6 @@ RUN git clone https://github.com/xoseperez/espurna.git /root/espurna
 WORKDIR /root/espurna/code
 RUN pip2 install -r requirements.txt
 RUN npm install
+RUN pio update
 
 CMD ./build.sh
